@@ -1,3 +1,5 @@
 cmd ablakban:
 npm i -g sass => a sass globális telepítése vagy frissítése
 
+scss áfrofdítása:
+sass assets\scss\page.scss assets\css\page.css
