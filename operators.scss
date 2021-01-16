@@ -1,0 +1,29 @@
+// terminálban sass és az útvonal, kiírja az egyenlőség vizsgálatot
+@debug -----------------EQUALITY-----------------;
+@debug 1px==1; // false
+@debug 1px==1px; //true
+@debug 10px==1cm; //false
+@debug 48px==.5in; //true
+@debug 0.9999999999999999999999==1; //true
+@debug Arial=='Arial';
+@debug Arial=="Arial";
+@debug 'Arial'=="Arial";
+@debug 'Arial' !="Arial";
+
+@debug true==false;
+
+@debug -----------------RELATIONS-----------------;
+@debug 100>50;
+@debug -----------------MATH-----------------;
+@debug 10s+5s;
+@debug (10px / 2);
+@debug -----------------STRING-----------------;
+@debug "Times "+"New Roman";
+
+.container::before {
+    font: 16px / 16px "Times "+ "New Roman", Times, serif;
+}
+
+// ha a család név között szóköz van akkor kell idézőjel közé tenni!
+
+@debug ----------------------------------;

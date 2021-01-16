@@ -23,3 +23,26 @@ az alulvonás nélküli verzió új css fájlt készít!!
 
 
 NESTING ==> Amikor egymásba ágyazzuk a css elemeket diven belüli ul .. stb.
+
+
+VÁLTOZÓK LÉTREHOZÁSA:
+$global-color: red;   // bárhol elérhető a kódon belül, global hatókörü
+.container {
+    color: $global-color;
+
+    $local-color: blue;   // csak helyi hatókörü, blokkon belül
+    background: $local-color;
+
+    $global-color: green !global; // globális változó módosítása
+}
+Ha a globális és locális azonos nevü, akkor a locális
+felül tudja írni a globálist ha létrhozása után locálisan
+használva van.
+
+
+OPERÁTOROK
+Egyenlőség vizsgálat: == egyenlő-e, != nem egyenlő
+Relációs operátorok: <, >, <=, >=
+Matematikai operátorok: +, -, *, /, %
+Sztring operátorok: +, /, -, #{}
+Logikai műveletek: not, and, or
