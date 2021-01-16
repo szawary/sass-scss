@@ -1,5 +1,9 @@
+nodejs.org telepítése az első lépés, LTS verziót kell választani.
+
+
+
 cmd ablakban:
-npm i -g sass => a sass globális telepítése vagy frissítése
+npm i sass -g => a sass globális telepítése vagy frissítése
 
 scss áfrofdítása:
 sass assets\scss\page.scss assets\css\page.css
@@ -16,3 +20,6 @@ sass --watch assets\scss:assets\css
 _base.scss fordítása után a fő fájlba húzza _base
 az alulvonás nélküli verzió új css fájlt készít!!
 
+
+
+NESTING ==> Amikor egymásba ágyazzuk a css elemeket diven belüli ul .. stb.
