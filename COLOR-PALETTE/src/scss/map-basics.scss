@@ -1,9 +1,37 @@
 /* MAP: get, has-key, keys, merge, remove, values */
+@use "sass:map";
 
-$colors: (success: green,
+$colors: (
+    success: green,
     warning: orange,
     danger: red,
 );
 
-// globálisan elérhető ...
-@debug map-get ($map:$colors, $key: success);
+$base-colors: (
+    white: white,
+    black: black,
+);
+
+// globálisan elérhető nem használom a use "sass:map";-et
+// @debug map-get($map: $colors, $key: success); // value: green
+
+@debug map.get($colors, success); // value: green
+@debug map.has-key($colors, test); // van-e olyan kulcsu elem?
+@debug map.keys($colors); // felsorolja, hogy milyen kulcsu elem érhető el a mapan belül
+@debug map.merge($colors, $base-colors);
+$all-colors: map.merge($colors, $base-colors);
+
+@debug $all-colors;
+@debug map.remove($colors, success); // eltávolítom a success elemet
+// de csakis ezen utasítás idejére, eredetiben benne van!!
+@debug $colors;
+
+// ha azt akarom, hogy tényleg módosuljon:
+$colors: map.remove($colors, success);
+@debug $colors;
+
+// adott map összes értékét adja vissza:
+@debug map.values($colors);
+
+
+
