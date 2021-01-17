@@ -19,7 +19,7 @@
         //background--lighter-COLOR-5
         @each $percent in $lighter-percents {
             .background--lighter-#{""+$key}-#{$percent} {
-                background-color: color.adjust($value, $lightness: $percent);
+                background-color: color.adjust($value, $lightness: $percent*1%);
             }
         }
     }
