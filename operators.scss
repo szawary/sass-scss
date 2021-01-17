@@ -26,4 +26,9 @@
 
 // ha a család név között szóköz van akkor kell idézőjel közé tenni!
 
-@debug ----------------------------------;
+@debug ----------------BOOLEAN------------------;
+
+@debug not true; // false
+@debug true and false; // false
+@debug false and false; // true
+@debug true or false; // true

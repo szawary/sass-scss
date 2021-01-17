@@ -4,8 +4,8 @@ body {
 }
 
 .nav {
-  background-color: white;
-  box-shadow: 0 0 10px #aaaaaa;
+  background-color: #777;
+  box-shadow: 0 0 10px #555;
   display: flex;
   justify-content: center;
 }
@@ -39,7 +39,7 @@ body {
   text-align: center;
 }
 .nav__link {
-  color: #222;
+  color: #fff;
   display: block;
   font-size: 1rem;
   line-height: 1rem;
@@ -47,7 +47,8 @@ body {
   text-decoration: none;
 }
 .nav__link:hover {
-  background-color: #efefef;
+  color: #000;
+  background-color: #fff;
   cursor: pointer;
 }
 .nav__hamburger-checkbox {
@@ -71,12 +72,10 @@ body {
   }
 }
 .nav__hamburger-line {
-  background-color: #222;
+  background-color: #fff;
   display: block;
   height: 2px;
   width: 1.5rem;
 }
-
-/*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style-bem.css.map */

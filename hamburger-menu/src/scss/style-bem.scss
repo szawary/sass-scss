@@ -1,11 +1,9 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
+// @use "modules/colors"as szinek;
+@use "modules/modules";
 
 .nav {
-    background-color: white;
-    box-shadow: 0 0 10px #aaaaaa;
+    background-color: modules.$nav-background-color;
+    box-shadow: 0 0 10px modules.$nav-shadow-color;
     display: flex;
     justify-content: center;
 
@@ -40,7 +38,7 @@ body {
     }
 
     &__link {
-        color: #222;
+        color: modules.$link-color;
         display: block;
         font-size: 1rem;
         line-height: 1rem;
@@ -48,7 +46,8 @@ body {
         text-decoration: none;
 
         &:hover {
-            background-color: #efefef;
+            color: modules.$link-hover-color;
+            background-color: modules.$link-hover-background-color;
             cursor: pointer;
         }
     }
@@ -77,13 +76,10 @@ body {
         }
 
         &-line {
-            background-color: #222;
+            background-color: modules.$link-color;
             display: block;
             height: 2px;
             width: 1.5rem;
         }
     }
 }
-
-
-/*# sourceMappingURL=style.css.map */
