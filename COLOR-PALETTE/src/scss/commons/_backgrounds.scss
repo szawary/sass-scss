@@ -2,4 +2,4 @@
 @use "../mixins/backgrounds";
 
 @include backgrounds.generate-colored-backgrounds(colors.$color-palette);
-@include backgrounds.generate-lighter-colored-backgrounds(colors.$color-palette, colors.lighter-colors);
+@include backgrounds.generate-lighter-colored-backgrounds(colors.$color-palette, colors.$lighter-colors);
