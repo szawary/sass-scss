@@ -1,0 +1,8 @@
+/* MAP: get, has-key, keys, merge, remove, values */
+
+$colors: (success: green,
+    warning: orange,
+    danger: red,
+);
+
+@debug map-get
